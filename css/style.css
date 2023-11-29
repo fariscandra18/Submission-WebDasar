@@ -28,6 +28,10 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url(./background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -48,7 +52,6 @@ a {
 }
 
 header.navbar-container {
-background: transparent;
  max-width: 1200px;
  width: 100%;
  margin-inline: auto;
@@ -79,7 +82,7 @@ header.navbar-container .nav-list li a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  color: var(--primaryTextColor);
+  color: var(--secondaryBackgroundColor);
   padding: .5rem 1.5rem;
   border-radius: 50px;
   transition: all .2s ease-in-out;
