@@ -26,12 +26,14 @@
 body {
     font-family: "Roboto", sans-serif;
     height: 100vh;
-    display: flex;
+    display: block;
     flex-direction: column;
     background-image: url(./background.png);
     background-repeat: no-repeat;
-    background-size: auto;
-    display: block;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: auto;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -59,7 +61,6 @@ header.navbar-container {
  display: flex;
  justify-content: space-between;
  align-items: center;
- 
  padding-block: 1rem;
  z-index: 999;
 }
@@ -95,11 +96,15 @@ header.navbar-container .nav-list li:hover a {
 }
 
 article {
+  box-sizing: border-box;
+  display: block;
   padding: 100px 60px;
 }
 article h1 {
   font-size: 150px;
   color: #fff;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .btn {
@@ -118,6 +123,9 @@ article h1 {
 }
 
 #destinasi {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 23rem;
   background-color: var(--secondaryBackgroundColor);
   padding: var(--sectionPadding);
@@ -153,9 +161,12 @@ article h1 {
 }
 
 #galery {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   display: block;
-  margin-top: 1rem;
   padding: 5rem 10%;
+  background: var(--primaryBackgroundColor);
 }
 
 .galery-main-container{
@@ -165,6 +176,7 @@ article h1 {
 
 #galery .galery-main-container p {
   padding-bottom: 1.5rem;
+  color: var(--primaryBackgroundColor);
 }
 
 #galery .galery-main-container img {
@@ -174,7 +186,9 @@ article h1 {
 }
 
 main aside {
-  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   background: #d9d9d9;
   display: block;
   padding: 20px;
@@ -189,6 +203,9 @@ aside img {
 
 
 footer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 4rem 0;
     background: var(--secondaryBackgroundColor);
     text-align: center;
